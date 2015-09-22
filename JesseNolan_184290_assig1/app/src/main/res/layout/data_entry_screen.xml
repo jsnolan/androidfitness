@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+    <TextView android:text="@string/data_entry" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:gravity="center"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="fill_parent"
+            android:text="@string/activity_type"
+            android:layout_width="100dp"
+            android:textSize="13dp"
+            android:gravity="center">
+        </TextView>
+        <Spinner android:id="@+id/activityType"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="fill_parent"
+            android:text="@string/activity_duration"
+            android:layout_width="100dp"
+            android:textSize="13dp"
+            android:gravity="center">
+        </TextView>
+        <EditText android:id="@+id/activityDuration"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:hint="@string/activity_duration_hint"
+            android:inputType="number">
+        </EditText>
+    </LinearLayout>
+
+
+    <RadioGroup android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp">
+        <RadioButton android:id="@+id/moderateIntensity"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/moderateIntensity"
+            android:onClick="onRadioButtonClicked" />
+        <RadioButton android:id="@+id/vigorousIntensity"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/vigorousIntensity"
+            android:onClick="onRadioButtonClicked" />
+    </RadioGroup>
+
+    <TextView android:layout_height="40dp"
+        android:text="@string/activity_date"
+        android:layout_width="fill_parent"
+        android:textSize="13dp"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner android:id="@+id/activityDay"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_weight="1">
+        </Spinner>
+        <Spinner android:id="@+id/activityMonth"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_weight="1">
+        </Spinner>
+        <Spinner android:id="@+id/activityYear"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1">
+        </Spinner>
+    </LinearLayout>
+
+    <Button android:id="@+id/updateButton"
+        android:layout_marginTop="50dp"
+        android:layout_height="70dp"
+        android:layout_width="fill_parent"
+        android:text="@string/update"
+        android:textSize="30dp">
+    </Button>
+
+    <Button android:id="@+id/weekly_summary_button_2"
+        android:layout_height="70dp"
+        android:layout_width="fill_parent"
+        android:text="@string/weekly_summary"
+        android:textSize="30dp">
+    </Button>
+
+    <TextView android:id="@+id/updated_text"
+        android:layout_height="wrap_content"
+        android:text="@string/data_updated"
+        android:layout_width="fill_parent">
+    </TextView>
+
+</LinearLayout>
