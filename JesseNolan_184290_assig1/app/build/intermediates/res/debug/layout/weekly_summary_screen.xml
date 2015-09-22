@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+    <TextView android:text="@string/weekly_summary" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:gravity="center"/>
+
+    <TextView android:id="@+id/total_moderate_duration"
+        android:layout_height="wrap_content"
+        android:text="@string/total_vigorous_duration"
+        android:layout_width="fill_parent"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView android:id="@+id/total_vigorous_duration"
+        android:layout_height="wrap_content"
+        android:text="@string/total_vigorous_duration"
+        android:layout_width="fill_parent"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView android:id="@+id/total_duration"
+        android:layout_height="wrap_content"
+        android:text="@string/total_duration"
+        android:layout_width="fill_parent"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView android:id="@+id/total_met_minutes"
+        android:layout_height="wrap_content"
+        android:text="@string/total_met_minutes"
+        android:layout_width="fill_parent"
+        android:textSize="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_height="100dp"
+        android:layout_width="fill_parent">
+    </TextView>
+
+    <TextView android:id="@+id/recommended_met_minutes"
+        android:layout_height="wrap_content"
+        android:text="@string/recommended_met_minutes"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:textSize="25dp">
+    </TextView>
+
+    <TextView android:id="@+id/empty_weekly_summary"
+        android:layout_height="100dp"
+        android:text="@string/empty_weekly_summary"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:textSize="25dp">
+    </TextView>
+
+</LinearLayout><!-- From: file:/Users/jessenolan/Documents/Google%20Drive/Uni%20Work%20Folder%20Y3Sem1/Mobile%20Application%20Development/KIT305/Assignment_1/JesseNolan_184290_assig1/app/src/main/res/layout/weekly_summary_screen.xml -->
